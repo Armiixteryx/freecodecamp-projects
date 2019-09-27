@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FCC: Survey Form</title>
+	 <link href="https://fonts.googleapis.com/css?family=Dosis|Righteous&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1 id="title">Survey Form</h1>
+
+	<main>
+		<p id="description">Let us know how we can improve freeCodeCamp</div>
+
+		<form id="survey-form">
+			<div id="wrapper">
+				<label for="name" id="name-label">* Name:</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name" required>
+			
+			
+				<label for="email" id="email-label">* Email:</label>
+				<input type="email" name="email" id="email" placeholder="Enter your Email" required>
+			
+			
+				<label for="number" id="number-label">* Age:</label>
+				<input type="number" name="number" id="number" placeholder="Age" min="1" max="150" required>
+			
+			
+				<label for="dropdown">Which option best describes your current role?</label>
+				<select id="dropdown">
+					<option selected disabled>Select an option</option>
+					<option value="student">Student</option>
+					<option value="fulltime-job">Full Time Job</option>
+					<option value="fulltime-learner">Full Time Learner</option>
+					<option value="not-to-say">Prefer not to say</option>
+					<option value="other">Other</option>
+				</select>
+			
+			
+				 	<label>* How likely is that you would recommend freeCodeCamp to a friend?</label>
+					<span>
+						<div>
+							<input type="radio" value="definitely" name="recommendation">
+							<label for="definitely">Definitely</label>
+						</div>
+						<div>
+						<input type="radio" value="maybe" name="recommendation">
+						<label for="maybe">Maybe</label>
+					</div>
+					<div>
+						<input type="radio" value="not-sure" name="recommendation">
+						<label for="not-sure">Not sure</label>
+					</div>
+					</span>
+			
+			
+				<label>Things that should be improved in the future <br>(Check all that apply):
+				</label>
+				<span>
+					<div>
+						<input type="checkbox" value="frontend-projects" name="improvements">
+						<label for="frontend-projects">Front-end Projects</label>
+					</div>
+					<div>
+						<input type="checkbox" value="backend-projects" name="improvements">
+						<label for="backend-projects">Back-end Projects</label>
+					</div>
+					<div>
+						<input type="checkbox" value="data-visualization" name="improvements">
+						<label for="data-visualization">Data visualization</label>
+					</div>
+					<div>
+						<input type="checkbox" value="challenges" name="improvements">
+						<label for="challenges">Challenges</label>
+					</div>
+					<div>
+						<input type="checkbox" value="opensource-community" name="improvements">
+						<label for="opensource-community">Open Source Community</label>
+					</div>
+					<div>
+						<input type="checkbox" value="gitter-help-rooms" name="improvements">
+						<label for="gitter-help-rooms">Gitter help rooms</label>
+					</div>
+					<div>
+						<input type="checkbox" value="videos" name="improvements">
+						<label for="videos">Videos</label>
+					</div>
+					<div>
+						<input type="checkbox" value="city-meetups" name="improvements">
+						<label for="city-meetups">City Meetups</label>
+					</div>
+					<div>
+						<input type="checkbox" value="wiki" name="improvements">
+						<label for="wiki">Wiki</label>
+					</div>
+					<div>
+						<input type="checkbox" value="forum" name="improvements">
+						<label for="forum">Forum</label>
+					</div>
+					<div>
+						<input type="checkbox" value="additional-courses" name="improvements">
+						<label for="additional-courses">Additional Courses</label>
+					</div>
+				</span>
+			
+			
+				<label>Any Comments or Suggestions?</label>
+				<textarea name="comments-area" placeholder="Enter your comment here..."></textarea>
+			</div>
+			<button id="submit">Submit</button>
+		</form>
+	</main>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

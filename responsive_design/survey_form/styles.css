@@ -1,0 +1,56 @@
+body {
+	background-color: rgb(179, 179, 204);
+	font-family: 'Dosis', sans-serif;
+	margin: 0 0 10px 0;
+}
+
+#title {
+    font-family: 'Righteous', cursive;
+	background-color: rgb(102, 102, 153);
+	color: white;
+	padding: 0.3em;
+	margin: 0 0 0px 0;
+}
+
+#description {
+	font-size: 1.25em;
+}
+
+#title, #description {
+	text-align: center;
+}
+
+main {
+	background-color: #f2f2f2;
+	border-radius: 0 0 5px 5px;
+	max-width: 700px;
+	margin: auto;
+	padding: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#wrapper {
+	display: grid;
+	grid-template-columns: 1fr 0.9fr;
+	column-gap: 10px;
+	row-gap: 25px;
+}
+
+label {
+	text-align: right;
+}
+
+input, select, textarea {
+	max-width: 90%;
+}
+
+#number {
+	width: auto;
+}
+
+#submit {
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+}
