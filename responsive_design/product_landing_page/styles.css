@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Oswald&display=swap');
+
+body {
+	font-family: 'Dosis', sans-serif;
+	background-color: #e6e6e6;
+}
+
+.features-title {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.2em;
+}
+
+#header {
+	display: flex;
+	flex-wrap: wrap;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #e6e6e6;
+}
+
+#nav-bar {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	/*! width: 100%; */
+	text-align: center;
+}
+
+.nav-link {
+	margin: 5px;
+	text-decoration: none;
+	color: initial;
+}
+
+#header-img {
+	max-width: 50%;
+	display: block;
+	height: auto;
+}
+
+#form {
+	margin-bottom: 10px;
+}
+
+#form * {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#form p {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+}
+
+#form #email {
+	margin-bottom: 10px;
+}
+
+#features article {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#features article img {
+	display: none;
+}
+
+#features article p {
+	text-align: center;
+}
+
+.features-title {
+	font-weight: bold;
+	margin-bottom: -10px;
+}
+
+#pricing article {
+	border: 1px solid;
+	padding: 0 10px 10px 10px;
+	margin: 20px;
+}
+
+.pricing-title {
+	font-size: 1.2em;
+	font-weight: bold;
+	background-color: #ffcc00;
+	margin: 0 -10px 0 -10px;
+	padding: 10px;
+}
+
+.pricing-price {
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#pricing article p {
+	text-align: center;
+}
+
+#pricing article button {
+	display: block;
+	margin: auto;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: center;
+	background-color: #cccccc;
+	margin: 0 -8px -16px -8px;
+	padding: 8px;
+}
+
+footer nav a {
+	margin: 0 5px 0 5px;
+	text-decoration: none;
+	color: #404040;
+}
+
+footer p {
+	font-style: italic;
+	color: #404040;
+}
+
+button, #submit {
+	border: none;
+	background-color: #ffcc00;
+	padding: 5px 20px;
+	text-align: center;
+	font-size: 1.10em;
+	-webkit-transition: background-color 1s;
+	transition: background-color 1s;
+}
+
+button:hover, #submit:hover {
+	background-color: #ff6600;
+	cursor: pointer;
+}
+
+/* -------------------------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+	#header-img {
+		max-width: 100%;
+	}
+	
+	#nav-bar {
+		/*! flex-direction: column; */
+	}
+}
